@@ -1,0 +1,28 @@
+{
+  "name": "keycloak-ecommerce-client-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duc12597/keycloak-ecommerce-client-demo.git"
+  },
+  "author": "duc12597@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duc12597/keycloak-ecommerce-client-demo/issues"
+  },
+  "homepage": "https://github.com/duc12597/keycloak-ecommerce-client-demo#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "keycloak-connect": "^6.0.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.11",
+    "pug": "^2.0.3"
+  }
+}
