@@ -1,0 +1,12 @@
+nav(class=['navbar', 'bg-danger', 'navbar-dark', 'navbar-expand-sm', 'sticky-top'])
+  .container-fluid
+    .navbar-header
+      a(href="/").navbar-brand E-commerce
+    ul(class=['nav', 'navbar-nav', 'navbar-right'])
+      - var isLoggedIn = (user ? user : '')
+      if isLoggedIn
+        li.nav-item
+          a(href="/logout", class=['nav-link']) Hello <b>#{user}</b>. Logout
+      else
+        li.nav-item
+          a(href="/login", class=['nav-link']) Login
