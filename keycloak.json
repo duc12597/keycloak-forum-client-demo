@@ -2,7 +2,7 @@
   "realm": "hanu",
   "auth-server-url": "http://localhost:8080/auth",
   "ssl-required": "external",
-  "resource": "ecommerce",
+  "resource": "forum",
   "public-client": true,
   "confidential-port": 0
 }

@@ -1,0 +1,17 @@
+extends layout.pug
+
+block title
+  hr
+  h1 Announcements
+  hr
+
+block content
+  each i in [1, 2]
+    .row
+      .col-md-12
+        .card
+          .card-header 
+            a(href="/announcements") Announcement #{i}
+          .card-body
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse commodi mollitia ab! Voluptates, veniam? Veritatis esse repellendus, distinctio aliquam inventore cupiditate vero illum, quisquam quas tenetur obcaecati asperiores. Placeat, possimus.
+        hr

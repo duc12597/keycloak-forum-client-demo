@@ -43,43 +43,15 @@ app.get('/login', keycloak.protect(), (req, res) => {
   res.redirect('/')
 })
 
-app.get('/books', keycloak.protect(), (req, res) => {
-  res.render('books', {
-    books: [
-      {
-        name: 'A Brief History of Time',
-        author: 'Stephen Hawking',
-        price: '600$',
-        stock: 150,
-      },
-      {
-        name: 'Sherlock Holmes',
-        author: 'Arthur Conan Doyle',
-        price: '700$',
-        stock: 150,
-      }
-    ]
-  })
+app.get('/announcements', keycloak.protect(), (req, res) => {
+  res.render('announcements')
 })
 
-app.get('/phones', keycloak.protect(), (req, res) => {
-  res.render('phones', {
-    phones: [
-      {
-        name: 'Sony Xperia X',
-        price: '500$',
-        stock: 150,
-      },
-      {
-        name: 'iPhone X',
-        price: '1000$',
-        stock: 150,
-      }
-    ]
-  })
+app.get('/posts', keycloak.protect(), (req, res) => {
+  res.render('posts')
 })
 
-var port = 3000
+var port = 3001
 app.listen(port, () => {
   console.log('http://localhost:' + port)
 })

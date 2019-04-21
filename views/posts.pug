@@ -1,0 +1,18 @@
+extends layout.pug
+
+block title
+  hr
+  h1 Posts
+  hr
+
+block content
+  .row
+    each i in [1, 2]
+      .col-md-6 
+        .card
+          .card-header 
+            a(href="/posts") Post #{i}
+          .card-body 
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. In neque voluptatum, officia aliquid dolor dolorem, impedit harum soluta facere earum hic, maxime quae eligendi! Dolore nulla sit hic vitae eaque!
+          .card-footer
+            button(class="btn") Comment
